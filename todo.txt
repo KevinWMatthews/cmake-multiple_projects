@@ -1,4 +1,5 @@
 Create library.
+    Use private flag for source code?
 
 Add versions in each project, print them to console.
 

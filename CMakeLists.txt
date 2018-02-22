@@ -10,3 +10,4 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}/lib")
 
 add_subdirectory(project1)
 add_subdirectory(project2)
+add_subdirectory(library)

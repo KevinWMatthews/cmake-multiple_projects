@@ -39,3 +39,4 @@ Cons:
 
 	* Updating a common library for one project updates it for all
 	* Custom command bloat may still be present
+	* Potentially breaks references to CMAKE_PROJECT_SOURCE_DIR

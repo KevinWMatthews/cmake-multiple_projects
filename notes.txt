@@ -7,3 +7,5 @@ Results so far:
     This provides the option to make the defualt target as well as individual source files (!).
         The latter is not useful for a large project.
     Running 'make clean' in project2 cleans the library.
+
+* Potentiall breaks all references to CMAKE_PROJECT_SOURCE_DIR

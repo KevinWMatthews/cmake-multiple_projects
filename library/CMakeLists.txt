@@ -9,14 +9,17 @@ add_library(library "")
 # List source files as PRIVATE so they won't be linked twice.
 target_sources(library
     PUBLIC
-        module1.h
+        # Other CMakeLists.txt files search for this; specify the full path.
+        "${CMAKE_CURRENT_LIST_DIR}/module1.h"
     PRIVATE
+        # Only this CMakeLists.txt resolves this.
         module1.c
 )
 
 target_include_directories(library
     PUBLIC
-        "${CMAKE_CURRENT_SOURCE_DIRECTORY}"
+        # Other CMakeLists.txt files use this; specify the full path.
+        "${CMAKE_CURRENT_LIST_DIR}"
 )
 
 add_library(library::library ALIAS library)

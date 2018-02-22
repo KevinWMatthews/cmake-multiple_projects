@@ -1,5 +1,7 @@
 Create library.
-    Use private flag for source code?
+    How to force library to check its public interface?
+    Does it provides the header files that it must?
+    Does it provide the functions that it must?
 
 Add versions in each project, print them to console.
 

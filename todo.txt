@@ -6,3 +6,4 @@ Create library.
 Add versions in each project, print them to console.
 
 Make project depend on specific library version.
+    The library is built internally. Can you force versions in this case?

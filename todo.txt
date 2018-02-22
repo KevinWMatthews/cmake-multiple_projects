@@ -1,5 +1,3 @@
-Create project2
-
 Create library.
 
 Add versions in each project, print them to console.

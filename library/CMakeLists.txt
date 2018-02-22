@@ -10,16 +10,16 @@ add_library(library "")
 target_sources(library
     PUBLIC
         # Other CMakeLists.txt files search for this; specify the full path.
-        "${CMAKE_CURRENT_LIST_DIR}/module1.h"
+        "${CMAKE_CURRENT_LIST_DIR}/include/module1.h"
     PRIVATE
         # Only this CMakeLists.txt resolves this.
-        module1.c
+        src/module1.c
 )
 
 target_include_directories(library
     PUBLIC
         # Other CMakeLists.txt files use this; specify the full path.
-        "${CMAKE_CURRENT_LIST_DIR}"
+        "${CMAKE_CURRENT_LIST_DIR}/include"
 )
 
 add_library(library::library ALIAS library)

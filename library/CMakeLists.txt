@@ -1,5 +1,11 @@
 project(Library VERSION 1.0.0)
 
+message(STATUS "PROJECT_SOURCE_DIR:       ${PROJECT_SOURCE_DIR}")
+message(STATUS "CMAKE_CURRENT_SOURCE_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS "CMAKE_CURRENT_LIST_DIR:   ${CMAKE_CURRENT_LIST_DIR}")
+message(STATUS "CMAKE_HOME_DIRECTORY:     ${CMAKE_HOME_DIRECTORY}")
+message(STATUS "")
+
 # Create easily-extendable source list
 # It is entirely possible to add all source files here.
 # This is a different method that is tailored for more complex projects.

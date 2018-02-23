@@ -4,6 +4,7 @@ Experimenting with defining CMake projects in subfolders instead of the root dir
 
 The directory structure:
 ```
+multiple_projects/
 ├── CMakeLists.txt              <-- No project()
 ├── library
 │   ├── CMakeLists.txt          <-- project()
@@ -39,4 +40,8 @@ Cons:
 
 	* Updating a common library for one project updates it for all
 	* Custom command bloat may still be present
-	* Potentially breaks references to CMAKE_PROJECT_SOURCE_DIR
+
+Technical bits:
+
+	* Use CMAKE_HOME_DIRECTORY to refer to the root of the project - multiple_projects/
+	* Use CMAKE_CURRENT_SOURCE_DIR or PROJECT_SOURCE_DIR within each project or library

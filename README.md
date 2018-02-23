@@ -45,3 +45,4 @@ Technical bits:
 
 	* Use CMAKE_HOME_DIRECTORY to refer to the root of the project - multiple_projects/
 	* Use CMAKE_CURRENT_SOURCE_DIR or PROJECT_SOURCE_DIR within each project or library
+	* Use CMAKE_CURRENT_LIST_DIR within included CMakeLists.txt files
